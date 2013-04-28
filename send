@@ -1,0 +1,8 @@
+#! /bin/bash
+
+baseDir=/usr/local/mia
+webDir=/var/www/mia
+
+rsync -avPz --delete --force source/* $baseDir/source
+rsync -avPz --delete --force www/* $webDir
+
